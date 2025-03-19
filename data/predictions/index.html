@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguins of Madagascar Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .penguin-data {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .visualization {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .prediction {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e8f4f8;
+            border-radius: 5px;
+        }
+        .adelie {
+            color: #2980b9;
+        }
+        .other {
+            color: #c0392b;
+        }
+        .stats {
+            margin-top: 30px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .madagascar {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Penguins of Madagascar Detector</h1>
+        
+        <div class="madagascar">
+            <p><strong>Searching for Skipper, Private, Rico, and Kowalski in New York City!</strong></p>
+        </div>
+        
+        <div class="prediction">
+            <p>Latest Prediction (Date: 2025-03-19): 
+                <span class="adelie">Adelie</span>
+            </p>
+            <p>This could be one of the Penguins of Madagascar!</p>
+        </div>
+        
+        <div class="visualization">
+            <img src="latest_visualization.png" alt="Penguin Visualization" style="max-width: 100%;">
+        </div>
+        
+        <div class="penguin-data">
+            <h3>Penguin Measurements:</h3>
+            <ul>
+                <li><strong>Bill Length:</strong> 44.02125281740061 mm</li>
+                <li><strong>Bill Depth:</strong> 17.225737253195568 mm</li>
+                <li><strong>Flipper Length:</strong> 199.79517940983658 mm</li>
+                <li><strong>Body Mass:</strong> 5374.903946706848 g</li>
+            </ul>
+        </div>
+        
+        <div class="stats">
+            <h3>Statistics</h3>
+            <p>Total penguins detected: 2</p>
+            <p>Adelie penguins detected: 2 (100.0% of total)</p>
+            <p>Model used: RandomForest</p>
+        </div>
+        
+        <div class="history">
+            <h3>Recent Detection History (Last 10)</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Species</th>
+                    <th>Adelie?</th>
+                </tr>
+                <tr><td>2025-03-19</td><td>Adelie</td><td>Yes</td></tr><tr><td>2025-03-19</td><td>Adelie</td><td>Yes</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

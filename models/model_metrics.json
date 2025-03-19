@@ -1,0 +1,102 @@
+{
+  "model_name": "RandomForest",
+  "metrics": {
+    "RandomForest": {
+      "accuracy": 0.98,
+      "best_params": {
+        "classifier__max_depth": null,
+        "classifier__n_estimators": 100
+      },
+      "classification_report": {
+        "Adelie": {
+          "precision": 1.0,
+          "recall": 0.9772727272727273,
+          "f1-score": 0.9885057471264368,
+          "support": 44.0
+        },
+        "Chinstrap": {
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1-score": 0.9523809523809523,
+          "support": 20.0
+        },
+        "Gentoo": {
+          "precision": 1.0,
+          "recall": 0.9722222222222222,
+          "f1-score": 0.9859154929577465,
+          "support": 36.0
+        },
+        "accuracy": 0.98,
+        "macro avg": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9831649831649831,
+          "f1-score": 0.975600730821712,
+          "support": 100.0
+        },
+        "weighted avg": {
+          "precision": 0.9818181818181819,
+          "recall": 0.98,
+          "f1-score": 0.9803482966766114,
+          "support": 100.0
+        }
+      }
+    },
+    "XGBoost": {
+      "accuracy": 0.98,
+      "best_params": {
+        "classifier__max_depth": 5,
+        "classifier__n_estimators": 100
+      },
+      "classification_report": {
+        "Adelie": {
+          "precision": 1.0,
+          "recall": 0.9545454545454546,
+          "f1-score": 0.9767441860465116,
+          "support": 44.0
+        },
+        "Chinstrap": {
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1-score": 0.9523809523809523,
+          "support": 20.0
+        },
+        "Gentoo": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 36.0
+        },
+        "accuracy": 0.98,
+        "macro avg": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9848484848484849,
+          "f1-score": 0.976375046142488,
+          "support": 100.0
+        },
+        "weighted avg": {
+          "precision": 0.9818181818181819,
+          "recall": 0.98,
+          "f1-score": 0.9802436323366556,
+          "support": 100.0
+        }
+      }
+    }
+  },
+  "features_used": [
+    "bill_length_mm",
+    "bill_depth_mm",
+    "flipper_length_mm",
+    "body_mass_g"
+  ],
+  "target_classes": [
+    "Adelie",
+    "Chinstrap",
+    "Gentoo"
+  ],
+  "adelie_detector_metrics": {
+    "accuracy": 0.96,
+    "precision": 0.9545454545454546,
+    "recall": 0.9545454545454546,
+    "f1": 0.9545454545454546
+  }
+}

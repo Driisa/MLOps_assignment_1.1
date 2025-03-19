@@ -1,0 +1,38 @@
+flowchart TD
+    subgraph Setup
+        A[Create GitHub Repository] --> B[Clone Repository Locally]
+        B --> C[Install Dependencies]
+    end
+    
+    subgraph DataPreparation["Data Preparation (Task 2)"]
+        D[Load Palmer Penguins Dataset] --> E[Explore Dataset]
+        E --> F[Transform to SQLite Database]
+        F --> G[Save to data/penguins.db]
+    end
+    
+    subgraph ModelTraining["Model Training (Task 3)"]
+        H[Read Data from Database] --> I[Feature Selection]
+        I --> J[Split Train/Test Data]
+        J --> K[Train Random Forest]
+        J --> L[Train XGBoost]
+        K --> M[Evaluate Models]
+        L --> M
+        M --> N[Save Best Model]
+    end
+    
+    subgraph DailyPrediction["Daily Prediction (Task 4)"]
+        O[Fetch New Penguin Data from API] --> P[Load Saved Model]
+        P --> Q[Make Prediction]
+        Q --> R[Save Results]
+        R --> S[Update GitHub Pages]
+    end
+    
+    subgraph Deployment
+        T[Set Up GitHub Actions] --> U[Configure GitHub Pages]
+        U --> V[Schedule Daily Predictions]
+    end
+    
+    C --> D
+    G --> H
+    N --> O
+    S --> T

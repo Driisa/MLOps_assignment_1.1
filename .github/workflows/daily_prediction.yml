@@ -1,0 +1,53 @@
+name: Daily Penguin Prediction
+
+on:
+  schedule:
+    # Run at 7:30 AM UTC every day
+    - cron: '30 7 * * *'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+
+# This is the critical part - setting proper permissions
+permissions:
+  contents: write  # Explicit permission to write to repository contents
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run prediction
+      run: |
+        python scripts/prediction-api-script.py
+    
+    - name: Commit and push results
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/predictions/latest.json || true
+        git add data/predictions/history.json || true
+        git add data/predictions/latest_visualization.png || true
+        git add index.html || true
+        git add latest_visualization.png || true
+        
+        # Check if there are changes to commit
+        if [[ -n "$(git status --porcelain)" ]]; then
+          git commit -m "Update daily penguin prediction for $(date +'%Y-%m-%d')"
+          git push
+        else
+          echo "No changes to commit"
+        fi
