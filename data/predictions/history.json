@@ -8,5 +8,10 @@
     "date": "2025-03-19",
     "predicted_species": "Adelie",
     "is_adelie": true
+  },
+  {
+    "date": "2025-03-19",
+    "predicted_species": "Adelie",
+    "is_adelie": true
   }
 ]
