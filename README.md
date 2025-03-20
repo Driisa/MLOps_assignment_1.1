@@ -154,8 +154,6 @@ The project creates a daily updated GitHub Pages site with:
 - History of recent predictions
 - Statistics on detected Adelie penguins
 
-You can view the live results at: https://Driisa.github.io/penguins-of-madagascar/
-
 ## Contributing
 
 This project was created as part of an MLOps university assignment. Contributions, suggestions, and improvements are welcome!
