@@ -83,7 +83,7 @@ The `model-training-script.py` handles:
 ### 3. Daily Prediction (Task 4)
 
 The `prediction-api-script.py` handles:
-- Fetching new penguin data from the API endpoint: http://130.225.39.127:8000/new_penguin/
+- Fetching new penguin data from the API endpoint: 
 - Loading trained models from disk
 - Making predictions using both the species classifier and Adelie detector
 - Creating visualizations of the prediction results
