@@ -1,21 +1,21 @@
 {
-  "date": "2025-03-23",
-  "time": "07:38:41",
+  "date": "2025-03-24",
+  "time": "07:39:58",
   "penguin_data": {
-    "bill_length_mm": 49.768358009041414,
-    "bill_depth_mm": 15.207950439917802,
-    "flipper_length_mm": 190.64758565247874,
-    "body_mass_g": 4140.519429191219,
-    "datetime": "2025-03-23T07:59:00+00:00"
+    "bill_length_mm": 42.589171842727794,
+    "bill_depth_mm": 16.153400750139337,
+    "flipper_length_mm": 179.69861861784906,
+    "body_mass_g": 3864.4108543520533,
+    "datetime": "2025-03-24T07:59:00+00:00"
   },
   "predicted_species": "Chinstrap",
   "species_probabilities": {
-    "Adelie": 0.2,
-    "Chinstrap": 0.59,
-    "Gentoo": 0.21
+    "Adelie": 0.27,
+    "Chinstrap": 0.58,
+    "Gentoo": 0.15
   },
   "is_adelie": false,
-  "adelie_probability": 0.155,
+  "adelie_probability": 0.515,
   "model_used": "RandomForest",
   "note": "Not one of the Penguins of Madagascar"
 }
