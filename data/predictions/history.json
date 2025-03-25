@@ -38,5 +38,10 @@
     "date": "2025-03-24",
     "predicted_species": "Chinstrap",
     "is_adelie": false
+  },
+  {
+    "date": "2025-03-25",
+    "predicted_species": "Adelie",
+    "is_adelie": true
   }
 ]
