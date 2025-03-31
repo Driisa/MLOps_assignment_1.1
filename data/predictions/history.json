@@ -68,5 +68,10 @@
     "date": "2025-03-30",
     "predicted_species": "Gentoo",
     "is_adelie": false
+  },
+  {
+    "date": "2025-03-31",
+    "predicted_species": "Adelie",
+    "is_adelie": true
   }
 ]
