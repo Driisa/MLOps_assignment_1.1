@@ -1,21 +1,21 @@
 {
-  "date": "2025-04-02",
-  "time": "07:40:31",
+  "date": "2025-04-03",
+  "time": "07:39:39",
   "penguin_data": {
-    "bill_length_mm": 36.621779624584356,
-    "bill_depth_mm": 18.553521468406533,
-    "flipper_length_mm": 221.04174724169502,
-    "body_mass_g": 2942.3723491453807,
-    "datetime": "2025-04-02T07:59:00+00:00"
+    "bill_length_mm": 53.32030580292838,
+    "bill_depth_mm": 21.46204541595156,
+    "flipper_length_mm": 201.32701010089252,
+    "body_mass_g": 4910.940528120084,
+    "datetime": "2025-04-03T07:59:00+00:00"
   },
-  "predicted_species": "Adelie",
+  "predicted_species": "Chinstrap",
   "species_probabilities": {
-    "Adelie": 0.72,
-    "Chinstrap": 0.15,
-    "Gentoo": 0.13
+    "Adelie": 0.17,
+    "Chinstrap": 0.81,
+    "Gentoo": 0.02
   },
-  "is_adelie": true,
-  "adelie_probability": 0.57,
+  "is_adelie": false,
+  "adelie_probability": 0.255,
   "model_used": "RandomForest",
-  "note": "This could be one of the Penguins of Madagascar!"
+  "note": "Not one of the Penguins of Madagascar"
 }
