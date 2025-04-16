@@ -148,5 +148,10 @@
     "date": "2025-04-15",
     "predicted_species": "Adelie",
     "is_adelie": true
+  },
+  {
+    "date": "2025-04-16",
+    "predicted_species": "Adelie",
+    "is_adelie": true
   }
 ]
